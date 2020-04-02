@@ -415,7 +415,11 @@
 
 .event {
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    padding: 2rem;
+	padding: 2rem;
+
+	.event-headers {
+		margin-bottom: 2rem;
+	}
 	
 	.event-header--subtitle {
 		font-size: $unit-4;
@@ -449,6 +453,19 @@
 		}
 	}
 
+	.event-cta {
+		margin-top: 1rem;
+	}
+
+	.event-body {
+
+		p {
+			line-height: 1.75;
+			margin-top: 0;
+		}
+	}
+
+
 	.events-detail {
 		font-size: 0.75rem;
 		padding: 0 0 1rem;
@@ -470,14 +487,6 @@
 			&:last-of-type {
 				margin-right: 0;
 			}
-		}
-	}
-
-	.event-body {
-
-		p {
-			line-height: 1.75;
-			margin-top: 0;
 		}
 	}
 
