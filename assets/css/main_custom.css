@@ -1543,7 +1543,10 @@ a:active .underline:after {
   background-image: url("../../images/events_desktop.jpg"); }
 .event {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 3.2rem;
   padding: 2rem; }
+  .event:last-of-type {
+    margin-bottom: 0; }
   .event .event-headers {
     margin-bottom: 2rem; }
   .event .event-header--subtitle {
