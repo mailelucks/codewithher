@@ -1,0 +1,52 @@
+html,
+body {
+    position: relative;
+
+    &.popup-open {
+        overflow: hidden;
+    
+        #opacityLayer {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.popup-body,
+.popup-close {
+    display: none;
+}
+
+.current-popup-open {
+
+    .popup-close {
+        display: block;
+        text-align: center;
+
+        &:before {
+            font-size: 2rem;
+        }
+    }
+
+    .popup-body {
+        background: $primary-color;
+        bottom: 0;
+        display: block;
+        height: 90%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        opacity: 1;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        visibility: visible;
+        width: 90%;
+        z-index: 9999;
+    }
+
+}
+
+.popup-inner {
+    padding: 5%;
+}

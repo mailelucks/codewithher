@@ -1,0 +1,151 @@
+// Display
+.d-block {
+  display: block;
+}
+.d-inline {
+  display: inline;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.d-flex {
+  display: flex;
+}
+.d-inline-flex {
+  display: inline-flex;
+}
+.d-none,
+.d-hide {
+  display: none !important;
+}
+.d-visible {
+  visibility: visible;
+}
+.d-invisible {
+  visibility: hidden;
+}
+.text-hide {
+  background: transparent;
+  border: 0;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  text-shadow: none;
+}
+.text-assistive {
+  border: 0;
+  clip: rect(0,0,0,0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.flex {
+	display: flex;
+}
+.flex-shrink {
+	flex: 0 0 auto;
+}
+.flex-grow {
+	flex: 1 1 auto;
+}
+.ai-c {
+	align-items: center;
+}
+.ai-fe {
+	align-items: flex-end;
+}
+.ai-s {
+	align-items: stretch;
+}
+.ai-start {
+	align-items: flex-start;
+}
+.flex-column {
+	flex-direction: column;
+}
+.flex-row {
+	flex-direction: row;
+}
+.flex-fw {
+	flex-wrap: wrap;
+}
+.jc-c {
+	justify-content: center;
+}
+.jc-sa {
+	justify-content: space-around;
+}
+.jc-sb {
+	justify-content: space-between;
+}
+.jc-start {
+	justify-content: flex-start;
+}
+// breakpoint display
+@media (min-width: $size-xs) {
+	.flex-xs {
+		display: flex;
+	}
+	.show-xs {
+		display: block;
+	}
+}
+@media (min-width: $size-sm) {
+	.flex-sm {
+		display: flex;
+	}
+	.show-sm {
+		display: block;
+	}
+}
+@media (min-width: $size-md) {
+	.flex-md {
+		display: flex;
+	}
+	.show-md {
+		display: block;
+	}
+	.ai-c-md {
+		align-items: center;
+	}
+	.flex-row-md {
+		flex-direction: row;
+	}
+	.jc-c-md {
+		justify-content: center;
+	}
+	.jc-start-md {
+		justify-content: flex-start;
+	}
+}
+@media (min-width: $size-lg) {
+	.flex-lg {
+		display: flex;
+	}
+	.show-lg {
+		display: block;
+	}
+	.ai-c-lg {
+		align-items: center;
+	}
+	.jc-sa-lg {
+		justify-content: space-around;
+	}
+	.jc-sb-lg {
+		justify-content: space-between;
+	}
+	.jc-start-lg {
+		justify-content: flex-start;
+	}
+}
+@media (min-width: $size-xl) {
+	.flex-xl {
+		display: flex;
+	}
+	.show-xl {
+		display: block;
+	}
+}

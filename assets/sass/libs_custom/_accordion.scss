@@ -1,0 +1,39 @@
+//MOBILE ACCORDION
+@media (max-width: $size-max-sm) {
+
+	.accordion {
+		padding-bottom: 27px !important;
+
+		.card-header {
+			cursor: pointer;
+		}
+	}
+	
+	.accordion-body {
+		max-height: 0;
+		transition: max-height 0.2s ease-out;
+		overflow: hidden;
+
+	}
+	.accordion-active {
+
+		.card-header {
+			border-bottom: 1px solid $dark-color;
+		}
+		.accordion-body {
+			max-height: 500px;
+			transition: max-height 0.3s ease-in;
+		}
+		.accordion-icon {
+
+			&:before {
+				content: "\f068";
+			}
+		}
+	}
+}
+.accordion-icon {
+	@media (min-width: $size-md) {
+		display: none;
+	}
+}

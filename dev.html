@@ -1,0 +1,51 @@
+<!-- Start Square Appointments Embed Code -->
+<script src='https://squareup.com/appointments/buyer/widget/ux2f1mazyy2gex/0WA1M7W7KWFK5.js'></script>
+<!-- End Square Appointments EmbedCode -->
+
+<!-- Calendly inline widget begin -->
+<!-- <div class="calendly-inline-widget" data-url="https://calendly.com/maile-lucks/nettiquette-workshop" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script> -->
+<!-- Calendly inline widget end -->
+
+<script>
+
+    async function getRecipe(query) {
+
+        try {
+            const params = new URLSearchParams({
+                apiKey: 'b237af5114934a389980c42f5a1b06a7',
+                query: query,
+                number: '8'
+            });
+            
+            const url = `https://api.spoonacular.com/recipes/search?${ params.toString() }`;
+            
+            const result = await fetch(url);
+            const data = await result.json();
+            console.log(data);
+        } catch (error) {
+            console.log(error);
+        }
+
+        // fetch(url, {
+        //     method: "GET",
+        //     headers: {
+        //         "Content-Type": "application/json"
+        //     }
+        // })
+        // .then(result => {
+        //     console.log(result);
+        //     return result.json();
+        // })
+        // .then(data => {
+        //     console.log(data);
+        // })
+        // .catch(error => {
+        //     console.log(error.message);
+        // });
+
+    }
+
+    getRecipe('oregano');
+    
+</script>

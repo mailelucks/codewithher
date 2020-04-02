@@ -1,2 +1,3 @@
 # codewithher
-Code With Her website codebase.
+
+codewithher.org codebase.

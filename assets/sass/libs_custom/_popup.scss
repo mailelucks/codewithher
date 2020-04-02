@@ -1,0 +1,79 @@
+.mfp-container {
+    background: $primary-color;
+    bottom: 0;
+    display: block;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 700px;
+    opacity: 1;
+    overflow-y: scroll;
+    padding: 0 2rem;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: visible;
+    width: 90%;
+    z-index: 9999;
+
+    @media (min-width: $size-md) {
+        min-height: 400px;
+	}
+
+    @media (min-width: $size-lg) {
+        max-width: 80%;
+        height: 80%;
+	}
+}
+
+.mfp-close {
+    font-size: 3rem;
+    left: 0;
+    margin: 0 auto;
+    min-width: auto;
+    right: 0;
+    opacity: 1;
+    text-align: center;
+    top: -30px;
+    transition: 0.2s all;
+    width: auto;
+
+    &:active {
+        top: -30px;
+    }
+
+    &:hover {
+        color: #000;
+    }
+
+    @media (min-width: $size-md) {
+        top: -60px;
+
+	}
+}
+
+.mfp-content {
+    height: 80%;
+
+    @media (min-width: $size-md) {
+        height: 70%;
+
+        .popup-content {
+            padding: 0 1rem;
+            width: 100%;
+            
+            p {
+                margin-top: 0;
+            }
+        }
+    }
+    
+    @media (min-width: $size-lg) {
+
+        .card-body {
+            align-items: center;
+            height: 100%;
+        }
+	}
+}
