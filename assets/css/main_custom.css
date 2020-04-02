@@ -1040,6 +1040,9 @@ a:active .underline:after {
 
   .show-md {
     display: block !important; } }
+@media (min-width: 1024px) {
+  .show-md-2 {
+    display: block !important; } }
 @media (min-width: 1200px) {
   .col-lg-12,
   .col-lg-11,

@@ -323,6 +323,11 @@
     display: block !important;
   }
 }
+@media (min-width: $size-md-2) {
+  .show-md-2 {
+    display: block !important;
+  }
+}
 @media (min-width: $size-lg) {
   .col-lg-12,
   .col-lg-11,
