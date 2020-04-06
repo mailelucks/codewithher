@@ -415,36 +415,48 @@
 	<script defer src="assets/js/main.js?v=3"></script>
 
 	<script type="application/ld+json">
-	{"@context":"https://schema.org",
-	"@graph":[
-		{"@type":"Organization",
-		"@id":"http://codewithher.org/#organization",
-		"name":"Code With Her",
-		"url":"http://codewithher.org/",
-		"sameAs":["https://www.facebook.com/CodeWithHer/",
-		"https://www.instagram.com/codewithher/"],
-		"logo":{"@type":"ImageObject",
-		"@id":"http://codewithher.org/#logo",
-		"url":"http://codewithher.org/images/Logo.jpg",
-		"width":378,
-		"height":276,
-		"caption":"Code With Her"},
-		"image":{"@id":"http://codewithher.org/#logo"}},
-		{"@type":"WebSite",
-		"@id":"http://codewithher.org/#website",
-		"url":"http://codewithher.org/",
-		"name":"Code With Her",
-		"publisher":{"@id":"http://codewithher.org/#organization"}},
-		{"@type":"WebPage",
-		"@id":"http://codewithher.org/#webpage",
-		"url":"http://codewithher.org/",
-		"inLanguage":"en-US",
-		"name":"Kids Technology Workshops San Diego | Kids Technology At Code With Her",
-		"isPartOf":{"@id":"http://codewithher.org/#website"},
-		"datePublished":"2018-11-23T20:14:47+00:00",
-		"dateModified":"2019-10-22T17:40:17+00:00",
-		"description":"Code With Her provides real-world coding experiences to empower girls to be the next leaders in technology. We offer programming workshops for all ages and skill levels. Our workshops range from the fundamentals of computer science all the way to advanced programming."}
-	]}
+	{
+		"@context": "https://schema.org",
+		"@graph":[
+			{
+				"@type": "Organization",
+				"contactPoint" : [{
+					"@type" : "ContactPoint",
+					"email" : "codewithher@gmail.com",
+					"contactType" : "workshop inquiry"
+				}],
+				"email" : "codewithher@gmail.com",
+				"event": {
+					"@type": "Event",
+					"about": ["Technology","Code","Coding","Leadership","Skill Building","Cybersecurity","Netiquette","Coding for Good","Think Like a Programmer","Software Engineering","Programming","Programming for Kids"],
+					"description": "We offer programming workshops for all ages and skill levels. Our workshops range from the fundamentals of computer science all the way to advanced programming. Contact us for full curriculum options.",
+					"image": "https://codewithher.org/images/event_promo_private_workshops.jpg",
+					"location": [{
+						"@type": "Place",
+						"address": "Your home",
+						"name": "Zoom Video Conference"
+					}],
+					"startDate": "2020-04",
+					"name": "Private Workshops"
+				},
+				"logo": "https://codewithher.org/images/Logo.jpg",
+				"name": "Code With Her",
+				"sameAs": [
+					"https://www.facebook.com/CodeWithHer/",
+					"https://www.instagram.com/codewithher/"
+				],
+				"url": "https://codewithher.org/"
+			},
+			{
+				"@type":"WebPage",
+				"url":"https://codewithher.org/",
+				"inLanguage":"en-US",
+				"name":"Kids Technology Workshops San Diego | Kids Technology At Code With Her",
+				"datePublished":"2018-11-23T20:14:47+00:00",
+				"description":"Code With Her provides real-world coding experiences to empower girls to be the next leaders in technology. We offer programming workshops for all ages and skill levels. Our workshops range from the fundamentals of computer science all the way to advanced programming."
+			}
+		]
+	}
 	</script>
 </body>
 </html>
